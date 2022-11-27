@@ -1,4 +1,4 @@
-# Module6Challenge (In Progress)
+# Module6Challenge
 # Module6Challenge - Server-Side APIs Challenge: Weather Dashboard
 
 ## Description
