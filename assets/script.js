@@ -29,3 +29,33 @@
 //technical acceptance
 // Uses the OpenWeather API to retrieve weather data
 // Uses localStorage to store persistent data
+
+
+//credits: https://github.com/mmeii/weather-dashboard
+
+//credits: https://github.com/sylviaprabudy/weather-dashboard
+
+
+
+
+$(function () {
+
+    function displayTimeTop() {
+        $("#currentDay").text(dayjs().format("dddd MMMM D, YYYY hh:mm:ss A"));
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      setInterval(displayTimeTop, 1000);
+
+});
