@@ -26,7 +26,7 @@ $(function () {
     const APIKEY = "9e19c11c5ae2513b934cad2837eb6265";
 
     function displayTimeTop() {
-        $("#currentDay").text(dayjs().format("dddd MMMM D, YYYY hh:mm:ss A"));
+        $("#currentDay").text(dayjs().format("dddd - MMMM D, YYYY hh:mm:ss A"));
       }
 
       function getWeather(cityName) {

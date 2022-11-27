@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="./assets/style.css">
     <title>Weather Dashboard</title>
 </head>
-<body>
+<body class="bg-primary">
 
   <!-- header with title and time -->
   <header class="jumbotron text-center bg-primary">
@@ -49,46 +49,49 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-12">
+            <div class="col-9 col-sm-6 col-lg-4 ">
                 <div class="input-group">
-                    <input class="form-control" type="text" id="enterCity"
-                        placeholder="Enter city to view weather">
+                    <input class="form-control text-center" type="text" id="enterCity"
+                        placeholder="Type City and Click Enter">
                         <button type="button" id="searchBtn" class="btn btn-primary"><i class="fas fa-search"></i></button>
                 </div>
             </div>
+            <div>
             <button class="btn col-4 btn-primary pb-3 pt-3" type="button" id="newSearch">Start Over</button>
-            <form id="history"></form>
+            </div>
+            <form class="col-6 col-sm-4 col-lg-2" id="history"></form>
         </div>
      </div>
   </div>
 
   <!-- Today's Weather Card -->
   <div class="col-12">
-      <h1 class="text-center">Today's Weather</h1>
-    <div class="row">
-        <div class="col-lg-11 card m-3 d-none" id="today-weather">
+      <h1 class="text-center">Today's Weather:</h1>
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-9 card m-3 d-none" id="today-weather">
             <div class="card-body">
-                <h3 id="city-name" class="city-name align-middle"></h3>
-                <img id="current-pic" alt="">
-                <p id="temperature"></p>
-                <p id="humidity"></p>
-                <p id="wind-speed"></p>
+                <h3 id="city-name" class="city-name text-center"></h3>
+                <img id="current-pic" class = "rounded mx-auto d-block" alt="">
+                <p class="text-center" id="temperature"></p>
+                <p class="text-center" id="humidity"></p>
+                <p class="text-center" id="wind-speed"></p>
             </div>
         </div>
     </div>
-
+  </div>
+  
     <!-- Five Day Weather Cards -->
     <div class="row d-none" id="fiveday-header">
         <div class="col-12">
-            <h3 class="text-center">5-Day Forecast</h3>
+            <h3 class="text-center">5-Day Forecast:</h3>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
-        <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
-        <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
-        <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
-        <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+    <div class="row d-flex justify-content-around">
+        <div class="col-md-2 forecast bg-white m-2 rounded text-center"></div>
+        <div class="col-md-2 forecast bg-white m-2 rounded text-center"></div>
+        <div class="col-md-2 forecast bg-white m-2 rounded text-center"></div>
+        <div class="col-md-2 forecast bg-white m-2 rounded text-center"></div>
+        <div class="col-md-2 forecast bg-white m-2 rounded text-center"></div>
     </div>
 
 <!-- scripts for jquery, dayjs, bootstrap, axios, assets -->
