@@ -22,7 +22,13 @@ Github pages hosting: https://fjnelson.github.io/Module6Challenge/
 
 ## Credits
 
-Placeholder
+Credit for contribution: 
+Sylvia Prabudy - June 28, 2020
+https://github.com/sylviaprabudy/weather-dashboard
+
+Credit for contribution:
+Mei Tu - January 27, 2021
+https://github.com/mmeii/weather-dashboard
 
 
 ## License
