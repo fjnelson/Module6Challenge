@@ -59,29 +59,30 @@
             <div>
             <button class="btn col-4 btn-primary pb-3 pt-3" type="button" id="newSearch">Start Over</button>
             </div>
-            <form class="col-6 col-sm-4 col-lg-2" id="history"></form>
+            <p class="pt-3 d-none" id="lastSearchedTitle">Last Searched:</p>
+            <form class="col-6 col-sm-4 col-lg-2" id="searchedLast"></form>
         </div>
      </div>
   </div>
 
   <!-- Today's Weather Card -->
   <div class="col-12">
-      <h1 class="text-center">Today's Weather:</h1>
+      <h1 class="text-center d-none" id="TodayWeatherTitle">Today's Weather:</h1>
     <div class="row justify-content-center">
-        <div class="col-12 col-lg-9 card m-3 d-none" id="today-weather">
+        <div class="col-12 col-lg-9 card m-3 d-none" id="todayWeather">
             <div class="card-body">
-                <h3 id="city-name" class="city-name text-center"></h3>
-                <img id="current-pic" class = "rounded mx-auto d-block" alt="">
+                <h3 id="cityName" class="text-center"></h3>
+                <img id="weatherPic" class = "rounded mx-auto d-block" alt="">
                 <p class="text-center" id="temperature"></p>
                 <p class="text-center" id="humidity"></p>
-                <p class="text-center" id="wind-speed"></p>
+                <p class="text-center" id="wind"></p>
             </div>
         </div>
     </div>
   </div>
   
     <!-- Five Day Weather Cards -->
-    <div class="row d-none" id="fiveday-header">
+    <div class="row d-none" id="fiveDay">
         <div class="col-12">
             <h3 class="text-center">5-Day Forecast:</h3>
         </div>
